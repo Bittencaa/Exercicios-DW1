@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset = "utf-8"/>
+        <title>Escala de tarefas de um buffet de festas</title>
+        <style type="text/css">
+            table {
+                border: none;}
+             th, td {
+                border: none;
+                background-color: #dddddd;
+                padding: 5px;
+                width: 100px;}
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th></th>
+                <th>Cozinha</th>
+                <th>Limpeza</th>
+                <th>Organização do salão</th>
+            </tr>
+            <tr>
+                <th>Segunda</th>
+                <td rowspan="2">Guilherme</td>
+                <td>Fabiana</td>
+                <td>Roberto</td>
+            </tr>
+            <tr>
+                <th>Terça</th>
+                <td>Nicolas</td>
+                <td rowspan="2">Fabio</td>
+            </tr>
+            <tr>
+                <th>Quarta</th>
+                <td colspan="2">Roberto</td>
+            </tr>
+            <tr>
+                <th>Quinta</th>
+                <td>Fabiana</td>
+                <td>Guilherme</td>
+                <td>Nicolas</td>
+            </tr>
+            <tr>
+                <th>Sexta</th>
+                <td colspan="2">Mario</td>
+                <td>Nicolas</td>
+            </tr>
+        </table>
+    </body>
+    </html>

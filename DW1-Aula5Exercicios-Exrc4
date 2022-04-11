@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="uft-8"/>
+        <title>Formulário Usuário</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Identificação do usuário</legend>
+                <div>
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" required/>
+                </div>
+                <br>
+                <div>
+                    <label for="senha"><strong>Senha</strong></label>
+                    <input type="text" name="senha" required/>
+                </div>
+                <br>
+                <div>
+                    <label for="cpf"><strong>CPF</strong></label>
+                    <input type="text" name="cpf" required/>
+                </div>
+                <br>
+                <div>
+                    <label><strong>Informe o seu sexo</strong></label>
+                    <label for="sexo"></label>
+                    <input type="radio" name="sexo" value="masculino" required/>Masculino
+                    <input type="radio" name="sexo" value="feminino" required/>Feminino
+                </div>
+                <br>
+                <div>
+                    <label for="data_nascimento">Data de nascimento</label>
+                    <input type="date" name="data_nascimento" required/>
+                </div>
+                <br>
+                <div>
+                    <label><strong>Informe o seu estado civil</strong></label>
+                    <label for="urgencia"></label>
+                    <input type="radio" name="urgencia" value="solteiro(a)" required/>Solteiro(a)
+                    <input type="radio" name="urgencia" value="casado(a)" required/>Casado(a)
+                </div>
+                <br>
+                <div>
+                    <label for="escolaridade"><strong>Informe seu grau de escolaridade</strong></label>
+                    <select name="escolaridade">
+                        <option selected disabled value="">Selecione</option>
+                        <option value="analfabeto">Analfabeto</option>
+                        <option value="alfabetizado">Alfabetizado</option>
+                        <option value="ef_completo">Ensino Fundamental completo</option>
+                        <option value="em_completo">Ensino Médio completo</option>
+                        <option value="es_completo">Ensino Superior completo</option>
+                        <option value="pg_completo">Pós-Graduação completa</option>
+                        <option value="es_incompleto">Cursando ensino superior</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="ocupacao"><strong>Informe sua ocupação principal</strong></label>
+                    <input type="text" name="ocupacao"/>
+                </div>
+                <br>
+                <div>
+                    <label for="renda"><strong>Informe sua renda mensal</strong></label>
+                    <input type="number" name="renda"/>
+                </div>
+                <br>
+                <div>
+                    <label for="dependentes"><strong>Informe o número de dependentes</strong></label>
+                    <input type="number" name="dependentes"/>
+                </div>
+                <br>
+                <div>
+                    <label for="telefone"><strong>Informe o seu telefone</strong></label>
+                    <input type="tel" name="telefone" required/>
+                </div>
+                <br>
+                <div>
+                    <label for="mail"><strong>Informe o seu email</strong></label>
+                    <input type="email" name="mail"/>
+                </div>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Localização</legend>
+                <div>
+                    <label for="estado"><strong>Informe seu estado</strong></label>
+                    <input type="text" name="estado" required/>
+                </div>
+                <br>
+                <div>
+                    <label for="cidade"><strong>Informe sua cidade</strong></label>
+                    <input type="text" name="cidade"/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem do Usuário</legend>
+                <div>
+                    <label><strong>Informe o grau de urgência</strong></label>
+                    <label for="urgencia"></label>
+                    <input type="radio" name="urgencia" value="n_urgente" required/>Não urgente
+                    <input type="radio" name="urgencia" value="p_urgente" required/>Pouco urgente
+                    <input type="radio" name="urgencia" value="urgente" required/>Urgente
+                    <input type="radio" name="urgencia" value="m_urgente" required/>Muito urgente
+                </div>
+                <br>
+                <div>
+                    <label for="mensagem"><strong>Deixe aqui sua mensagem</strong></label>
+                    <textarea name="mensagem">Entre com a sua mensagem...</textarea>
+                </div>
+                <br>
+                <div>
+                    <label><strong>Reportar Erro</strong></label>
+                    <input type="file" name="report_error"/><br>
+                    <input type="submit" value="Upload"/>
+                </div>
+                <br>
+            </fieldset>
+            <input type="submit" name="Enviar "value="enviar"/>
+        </form>
+    </body>
+</html>

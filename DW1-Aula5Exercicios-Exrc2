@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="uft-8"/>
+        <title>Filmes Favoritos</title>
+    </head>
+    <body>
+        <form>
+            <div>
+                <label for="usuario"><strong>Usuário</strong></label>
+                <input type="text" name="usuario" size="15" maxlength="30"/>
+            </div>
+            <br>
+            <div>
+                <label for="senha"><strong>Senha</strong></label>
+                <input type="text" name="senha" size="15" maxlength="30"/>
+            </div>
+            <div>
+                <p>O que você achou desse filme?</p>
+            <textarea name="comentarios" cols="20" rows="4">Entre com seu comentario...</textarea>
+            </div>
+            <br>
+            <div>
+                <label><strong>Dentre as opções abaixo, selecione seu gênero cinematográfico favorito</strong></label>
+                <label for="radio"></label>
+                    <input type="radio" name="genero" value="acao" checked="checked"/>Ação
+                    <input type="radio" name="genero" value="comedia"/>Comédia             
+                    <input type="radio" name="genero" value="romance"/>Romance
+            </div>
+            <br>
+            <div>
+                <label><strong>Selecione seu(s) serviço(s) de streaming favorito(s)</strong></label>
+                <label for="servico"></label>
+                <input type="checkbox" name="servico" value="netflix"/>Netflix
+                <input type="checkbox" name="servico" value="globoplay"/>Globoplay
+                <input type="checkbox" name="servico" value="disneyplus"/>Disney Plus
+            </div>
+            <br>
+            <div>
+                <label for="dispositivo"><strong>Em que dispositivo você costuma assistir filmes?</strong></label>
+                <select name="dispositivo">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="televisao">Televisão</option>
+                    <option value="celular">Celular</option>
+                    <option value="tablet">Tablet</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label><strong>Faça o upload da trilha sonora do seu filme favorito</strong></label>
+                <input type="file" name="user-soundtrack"/><br>
+                <input type="submit" value="Upload"/>
+            </div>
+            <br>
+            <div>
+                <label><strong>Pesquise seu filme favorito:</strong></label>
+                <input type="search" name="pesquisar" placeholder="Digite"/>
+                <input type="submit" value="Pesquisar"/> 
+            </div>
+        </form>
+    </body>
+</html>

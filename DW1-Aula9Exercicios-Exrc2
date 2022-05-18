@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="uft-8"/>
+        <title>Fatoração</title>
+        <script>
+            function Fatorial() {
+                var numero = parseInt(document.getElementById("numero").value);
+                var resposta = document.getElementById("resposta");
+                var resultado = 1;
+                for (var i = 1; i <= numero; i++) {
+                    resultado *= i;
+                }
+                document.getElementById("resposta").innerHTML = "Resposta: " + (resultado);
+         
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="numero">
+        <br>
+        <p id="resposta">Resposta: </p>
+        <button type="button" onclick="Fatorial()">Fatorial</button>
+    </body>
+</html>
